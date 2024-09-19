@@ -1,0 +1,16 @@
+.container{ 
+    width: 30%;
+    margin-top: 10%;
+    margin-left:35%;
+    border: 1.5px solid black;
+    background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+   }
+.col{
+    margin-bottom: 5%;
+   }
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(55, 196, 214) 0%, rgba(139,67,198,1) 35%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+    color: white;
+   }
