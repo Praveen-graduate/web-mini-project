@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script> -->
+
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="form">
+            <h3>Registration Form</h3>
+            <div class="input-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="course">Select Course</label>
+                <select id="course" name="course">
+                    <option>None</option>
+                    <option value="2">C</option>
+                    <option value="3">Python</option>
+                    <option value="4">C++</option>
+                    <option value="5">Java</option>
+                    <option value="6">Dot Net</option>
+                </select> 
+                <div class="error"></div>
+            </div>
+            <div class="input-group"> 
+                <label for="date">Select Date</label>
+                <input type="date" id="date" name="date">  
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="file">Choose File</label>
+                <input type="file" id="file" name="file" class="file">  
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="state">Select State</label>
+                <select id="state" name="state" onchange="populateDistricts()">
+                    <option value="none">None</option>
+                    <option value="a">Tamil Nadu</option>
+                    <option value="b">Kerala</option>
+                    <option value="c">Karnataka</option>
+                </select> 
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="district">Select District</label>
+                <select id="district" name="district">
+                    <option value="none">None</option>
+                </select> 
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="checkbox">Select your age limit</label>
+                <div class="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox">15-20<br>
+                <input type="checkbox" id="checkbox" name="checkbox">20-25<br>
+                <input type="checkbox" id="checkbox" name="checkbox">25-30<br>
+                <input type="checkbox" id="checkbox" name="checkbox">Above 30<br>
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <div class="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" name="checkbox-1">I Agree<br>
+                </div>
+                <div class="error"></div>
+            </div>
+            <button type="submit">Submit</button>
+            <!-- <button type="button" onclick="downloadExcel()">Download Excel</button> -->
+        </form>
+    </div>
+
+
+    <script src="form.js"></script>
+</body>
+</html>

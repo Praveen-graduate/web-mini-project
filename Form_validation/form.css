@@ -1,0 +1,90 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(55, 196, 214) 0%, rgba(139,67,198,1) 35%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+    margin: 0;
+}
+#form{
+    width: 400px;
+    margin: 10vh auto 0 auto;
+    background: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+}
+h3{
+    text-align: center;
+    color: brown;
+}
+#form button{
+    background-color: #792099;
+    color: white;
+    border: 1px solid  #792099;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 100%;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input-group input,select{
+    border-radius: 5px;
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(34, 193,195);
+}
+.input-group .file{
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 2px;
+    padding: 3px;
+    border: 1px solid rgb(34, 193,195);
+}
+.input-group .gender-options {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2%;
+}
+.input-group .checkbox {
+    display: block;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 3%;
+}
+.input-group input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.input-group input:focus{
+    outline: 0;
+}
+.input-group .error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.input-group.success input{
+    border-color: #0cc477;
+}
+.input-group.error input{
+    border-color:red;
+}
+.input-group.error select{
+    border-color:red;
+}
+.input-group.success select{
+    border-color: #0cc477;
+}
+
+#form button:hover{
+    background-color: aqua;
+    color: black;
+}
